@@ -8,7 +8,7 @@
     <artifactId>algorithm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>algorithm-leetcode</artifactId>
+  <artifactId>algorithm-nowcoder</artifactId>
   <packaging>jar</packaging>
   <dependencies>
     <dependency>
