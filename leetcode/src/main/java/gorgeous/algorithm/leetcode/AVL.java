@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import java.util.Optional;
+
 public class AVL<K extends Comparable<K>, V> {
 
     private TreapNode<K, V> root;
@@ -34,7 +36,7 @@ public class AVL<K extends Comparable<K>, V> {
     }
 
     public Integer size() {
-        return this.root == null ? 0 : this.root.getSize();
+        return Optional.ofNullable(this.root.getSize()).orElse(0);
     }
 
     public Integer rank(K key) {
