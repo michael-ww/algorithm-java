@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import java.util.Optional;
+
 public class LeetCode445 {
 
     public ListNode<Integer> addTwoNumbers(ListNode<Integer> l1, ListNode<Integer> l2) {
@@ -17,8 +19,8 @@ public class LeetCode445 {
         ListNode<Integer> current = dummy;
         Integer carryNumber = 0;
         while (l1 != null || l2 != null) {
-            int x = l1 == null ? 0 : l1.getValue();
-            int y = l2 == null ? 0 : l2.getValue();
+            int x = Optional.ofNullable(l1).map(ListNode::getValue).orElse(0);
+            int y = Optional.ofNullable(l2).map(ListNode::getValue).orElse(0);
             int z = x + y + carryNumber;
             current.setNext(new ListNode<>(z % 10));
             current = current.getNext();
