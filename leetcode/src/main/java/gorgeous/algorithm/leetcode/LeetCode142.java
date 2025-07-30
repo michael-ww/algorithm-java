@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.ListNode;
+
 public class LeetCode142 {
 
     public ListNode<Integer> detectCycle(ListNode<Integer> head) {

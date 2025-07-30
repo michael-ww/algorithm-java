@@ -1,9 +1,12 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.ListNode;
+import gorgeous.algorithm.common.Utility;
+
 public class LeetCode25 {
 
     public ListNode<Integer> reverseKGroup(ListNode<Integer> head, int k) {
-        ListNode<Integer> dummy = new ListNode<Integer>(null, head);
+        ListNode<Integer> dummy = new ListNode<>(null, head);
         ListNode<Integer> previous = dummy;
         while (head != null) {
             ListNode<Integer> tail = previous;

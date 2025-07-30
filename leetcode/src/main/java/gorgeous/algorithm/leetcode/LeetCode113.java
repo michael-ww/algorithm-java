@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode113 {
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {

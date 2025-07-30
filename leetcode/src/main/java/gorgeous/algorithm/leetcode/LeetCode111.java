@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode111 {
 
     public int minDepth(TreeNode<Integer> root) {

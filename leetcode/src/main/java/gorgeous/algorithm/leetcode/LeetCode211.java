@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.TrieNode;
+
 public class LeetCode211 {
 
     public static class WordDictionary {

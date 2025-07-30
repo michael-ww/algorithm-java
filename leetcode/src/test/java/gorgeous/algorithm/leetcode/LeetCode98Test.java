@@ -2,6 +2,8 @@ package gorgeous.algorithm.leetcode;
 
 import org.junit.jupiter.api.Assertions;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode98Test {
 
     //@Test

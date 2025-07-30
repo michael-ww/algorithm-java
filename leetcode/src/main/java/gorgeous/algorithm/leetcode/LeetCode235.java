@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode235 {
 
     public TreeNode<Integer> lowestCommonAncestor(TreeNode<Integer> root, TreeNode<Integer> p, TreeNode<Integer> q) {

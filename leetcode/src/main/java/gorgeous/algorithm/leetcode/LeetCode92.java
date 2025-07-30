@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.ListNode;
+
 public class LeetCode92 {
 
     public ListNode<Integer> reverseBetween(ListNode<Integer> head, int left, int right) {

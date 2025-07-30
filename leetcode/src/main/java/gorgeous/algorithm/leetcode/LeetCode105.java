@@ -3,6 +3,8 @@ package gorgeous.algorithm.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode105 {
 
     public TreeNode<Integer> buildTree(int[] preorder, int[] inorder) {

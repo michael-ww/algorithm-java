@@ -3,6 +3,8 @@ package gorgeous.algorithm.leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode958 {
 
     public boolean isCompleteTree(TreeNode<Integer> root) {

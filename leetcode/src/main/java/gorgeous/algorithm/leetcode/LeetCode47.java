@@ -6,7 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+
+import gorgeous.algorithm.common.Utility;
 
 public class LeetCode47 {
 
@@ -22,7 +23,7 @@ public class LeetCode47 {
 
     private void backtrack(int[] nums, int index, List<List<Integer>> answer) {
         if (index >= nums.length) {
-            answer.add(IntStream.of(nums).boxed().collect(Collectors.toList()));
+            answer.add(Arrays.stream(nums).boxed().collect(Collectors.toList()));
             return;
         }
 

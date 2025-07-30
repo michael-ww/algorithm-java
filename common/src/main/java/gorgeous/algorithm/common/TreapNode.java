@@ -1,4 +1,4 @@
-package gorgeous.algorithm.leetcode;
+package gorgeous.algorithm.common;
 
 public class TreapNode<K, V> {
 

@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.ListNode;
+
 public class LeetCode19 {
 
     public ListNode<Integer> removeNthFromEnd(ListNode<Integer> head, int n) {

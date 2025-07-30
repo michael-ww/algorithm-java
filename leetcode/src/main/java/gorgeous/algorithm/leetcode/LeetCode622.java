@@ -1,5 +1,7 @@
 package gorgeous.algorithm.leetcode;
 
+import gorgeous.algorithm.common.ListNode;
+
 public class LeetCode622 {
 
     public static class MyCircularQueue<T extends Comparable<T>> {

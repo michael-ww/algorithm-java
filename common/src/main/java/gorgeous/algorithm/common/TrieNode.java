@@ -1,4 +1,4 @@
-package gorgeous.algorithm.leetcode;
+package gorgeous.algorithm.common;
 
 import java.util.HashMap;
 

@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+import gorgeous.algorithm.common.TreeNode;
+
 public class LeetCode297 {
 
     public String preorderSerialize(TreeNode<Integer> root) {

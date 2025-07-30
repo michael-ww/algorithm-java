@@ -1,4 +1,4 @@
-package gorgeous.algorithm.leetcode;
+package gorgeous.algorithm.common;
 
 public class ListNode<T extends Comparable<T>> {
 
