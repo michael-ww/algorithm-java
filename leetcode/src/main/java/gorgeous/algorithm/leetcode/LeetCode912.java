@@ -80,8 +80,7 @@ public class LeetCode912 {
     private void heapify(int[] nums, int index, int length) {
         int leftIndex = index * 2 + 1;
         while (leftIndex < length) {
-            int largestIndex = leftIndex + 1 < length && nums[leftIndex + 1] > nums[leftIndex] ? leftIndex + 1
-                    : leftIndex;
+            int largestIndex = leftIndex + 1 < length && nums[leftIndex + 1] > nums[leftIndex] ? leftIndex + 1 : leftIndex;
             largestIndex = nums[largestIndex] > nums[index] ? largestIndex : index;
             if (largestIndex == index) {
                 break;

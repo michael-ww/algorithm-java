@@ -38,9 +38,9 @@ public class HuaWeiA202543 {
         if (grid[i][j].charAt(0) == '=') {
             String function = grid[i][j].substring(1);
             if (function.contains("+")) {
-                return operate(grid, function.split("\\+"), true);
+                return calculateExpression(grid, function.split("\\+"), true);
             } else if (function.contains("-")) {
-                return operate(grid, function.split("\\-"), false);
+                return calculateExpression(grid, function.split("\\-"), false);
             } else {
                 int[] coordinate = getCellCoordinate(function);
                 return getCellValue(grid, coordinate[0], coordinate[1]);
@@ -65,7 +65,7 @@ public class HuaWeiA202543 {
         return string.charAt(0) >= 'A' && string.charAt(0) <= 'Z';
     }
 
-    private static int operate(String[][] grid, String[] cells, boolean isAdd) {
+    private static int calculateExpression(String[][] grid, String[] cells, boolean isAdd) {
         List<Integer> list = new ArrayList<>();
         for (String cell : cells) {
             if (isCoordinate(cell)) {

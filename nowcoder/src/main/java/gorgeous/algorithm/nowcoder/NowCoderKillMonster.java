@@ -3,6 +3,7 @@ package gorgeous.algorithm.nowcoder;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
+// Time complexity: O(n!)
 public class NowCoderKillMonster {
 
     public static void main(String[] args) {

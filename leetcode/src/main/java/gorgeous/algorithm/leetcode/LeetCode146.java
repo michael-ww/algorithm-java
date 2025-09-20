@@ -9,36 +9,36 @@ public class LeetCode146 {
     public class LRUCache<K, V> {
 
         private final int capacity;
-        private final Map<K, V> cache;
-        private final LinkedList<K> visited;
+        private final Map<K, V> data;
+        private final LinkedList<K> sequence;
 
         public LRUCache(int capacity) {
             this.capacity = capacity;
-            this.cache = new HashMap<>(2 * capacity - 1);
-            this.visited = new LinkedList<>();
+            this.data = new HashMap<>(2 * capacity - 1);
+            this.sequence = new LinkedList<>();
         }
 
         public V get(K key) {
-            if (this.cache.containsKey(key)) {
-                this.visited.remove(key);
-                this.visited.addFirst(key);
-                return this.cache.get(key);
+            if (this.data.containsKey(key)) {
+                this.sequence.remove(key);
+                this.sequence.addFirst(key);
+                return this.data.get(key);
             } else {
                 return null;
             }
         }
 
         public void put(K key, V value) {
-            if (this.cache.containsKey(key)) {
-                this.visited.remove(key);
+            if (this.data.containsKey(key)) {
+                this.sequence.remove(key);
             } else {
-                if (this.cache.size() >= this.capacity) {
-                    K deleted = this.visited.removeLast();
-                    this.cache.remove(deleted);
+                if (this.data.size() >= this.capacity) {
+                    K deleted = this.sequence.removeLast();
+                    this.data.remove(deleted);
                 }
             }
-            this.cache.put(key, value);
-            this.visited.addFirst(key);
+            this.data.put(key, value);
+            this.sequence.addFirst(key);
         }
     }
 }

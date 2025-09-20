@@ -14,17 +14,14 @@ public class LeetCode90 {
     }
 
     private void dfs(int[] nums, int index, List<Integer> path, List<List<Integer>> answer) {
-        if (index >= nums.length) {
-            answer.add(new ArrayList<>(path));
-        } else {
-            path.add(nums[index]);
-            this.dfs(nums, index + 1, path, answer);
-            path.remove(path.size() - 1);
-            int next = index + 1;
-            while (next < nums.length && nums[index] == nums[next]) {
-                next++;
+        answer.add(new ArrayList<>(path));
+        for (int i = index; i < nums.length; i++) {
+            if (i > index && nums[i] == nums[i - 1]) {
+                continue;
             }
-            this.dfs(nums, next, path, answer);
+            path.add(nums[i]);
+            dfs(nums, i + 1, path, answer);
+            path.remove(path.size() - 1);
         }
     }
 }

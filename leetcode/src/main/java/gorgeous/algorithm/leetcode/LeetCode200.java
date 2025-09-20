@@ -2,6 +2,7 @@ package gorgeous.algorithm.leetcode;
 
 public class LeetCode200 {
 
+    // Time complexity : O(n*m)
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length <= 0 || grid[0].length <= 0) {
             return 0;

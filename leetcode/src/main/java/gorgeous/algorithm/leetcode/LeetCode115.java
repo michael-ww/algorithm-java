@@ -46,7 +46,7 @@ public class LeetCode115 {
         if (sl <= 0) {
             return 0;
         }
-        int answer = 0;
+        int answer;
         if (s.charAt(sl - 1) == t.charAt(tl - 1)) {
             answer = this.numDistinct(s, sl - 1, t, tl - 1) + this.numDistinct(s, sl - 1, t, tl);
         } else {

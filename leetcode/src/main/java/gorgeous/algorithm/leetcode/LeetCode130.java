@@ -15,17 +15,16 @@ public class LeetCode130 {
             for (int j = 0; j < board[i].length; j++) {
                 if (board[i][j] == 'O') {
                     board[i][j] = 'X';
-                } else if (board[i][j] == '#') {
+                }
+                if (board[i][j] == '#') {
                     board[i][j] = 'O';
                 }
             }
         }
-
     }
 
     private void infect(char[][] board, int row, int column) {
-        if (row < 0 || row >= board.length || column < 0 || column >= board[row].length || board[row][column] == '1'
-                || board[row][column] == '#') {
+        if (row < 0 || row >= board.length || column < 0 || column >= board[row].length || board[row][column] == '1' || board[row][column] == '#') {
             return;
         }
 
