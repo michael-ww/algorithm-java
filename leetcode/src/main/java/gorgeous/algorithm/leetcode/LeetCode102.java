@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode102 {
 
     public List<List<Integer>> levelOrder1(TreeNode<Integer> root) {

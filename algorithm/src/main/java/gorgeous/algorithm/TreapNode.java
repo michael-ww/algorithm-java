@@ -1,4 +1,4 @@
-package gorgeous.algorithm.common;
+package gorgeous.algorithm;
 
 public class TreapNode<K, V> {
 

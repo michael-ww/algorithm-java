@@ -3,8 +3,6 @@ package gorgeous.algorithm.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode894 {
 
     public List<TreeNode<Integer>> allPossibleFBT(int n) {

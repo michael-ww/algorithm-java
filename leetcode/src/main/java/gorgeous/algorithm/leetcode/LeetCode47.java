@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode47 {
 
     public List<List<Integer>> permuteUnique(int[] nums) {

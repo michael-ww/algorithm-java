@@ -2,8 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.HashSet;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode141 {
 
     public boolean hasCycle1(ListNode<Integer> head) {

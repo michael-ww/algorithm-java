@@ -2,8 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.PriorityQueue;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode23 {
 
     public ListNode<Integer> mergeKLists(ListNode<Integer>[] lists) {

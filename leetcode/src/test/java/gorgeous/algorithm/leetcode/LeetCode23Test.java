@@ -2,8 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import org.junit.jupiter.api.Assertions;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode23Test {
 
     public void mergeKLists_validInput_returnHead() {

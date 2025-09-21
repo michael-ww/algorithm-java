@@ -3,8 +3,6 @@ package gorgeous.algorithm.leetcode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode222Test {
 
     @Test

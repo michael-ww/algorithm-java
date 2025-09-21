@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode222 {
 
     public int countNodes(TreeNode<Integer> root) {

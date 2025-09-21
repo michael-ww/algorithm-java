@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>gorgeous</groupId>
-  <artifactId>algorithm</artifactId>
+  <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0-SNAPSHOT</version>
   <modules>
-    <module>common</module>
+    <module>algorithm</module>
     <module>leetcode</module>
     <module>nowcoder</module>
   </modules>
@@ -24,11 +24,6 @@
         <artifactId>junit-jupiter</artifactId>
         <version>5.8.0</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>gorgeous</groupId>
-        <artifactId>algorithm-common</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

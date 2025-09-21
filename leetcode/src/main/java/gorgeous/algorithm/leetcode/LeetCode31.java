@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode31 {
 
     public void nextPermutation(int[] nums) {

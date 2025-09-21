@@ -2,9 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.Optional;
 
-import gorgeous.algorithm.common.ListNode;
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode445 {
 
     public ListNode<Integer> addTwoNumbers(ListNode<Integer> l1, ListNode<Integer> l2) {

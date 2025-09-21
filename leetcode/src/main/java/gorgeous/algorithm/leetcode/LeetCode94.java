@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode94 {
 
     public List<Integer> inorderTraversal1(TreeNode<Integer> root) {

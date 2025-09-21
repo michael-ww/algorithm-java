@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode669 {
 
     public TreeNode trimBST(TreeNode<Integer> root, int low, int high) {

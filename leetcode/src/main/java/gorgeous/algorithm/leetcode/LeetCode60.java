@@ -2,8 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.Arrays;
 
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode60 {
 
     public String getPermutation1(int n, int k) {

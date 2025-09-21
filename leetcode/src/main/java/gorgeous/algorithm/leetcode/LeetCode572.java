@@ -3,8 +3,6 @@ package gorgeous.algorithm.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode572 {
 
     public boolean isSubtree1(TreeNode root, TreeNode subRoot) {

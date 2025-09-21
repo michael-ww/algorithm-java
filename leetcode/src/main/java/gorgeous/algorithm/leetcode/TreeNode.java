@@ -1,4 +1,4 @@
-package gorgeous.algorithm.common;
+package gorgeous.algorithm.leetcode;
 
 public class TreeNode<T> {
 

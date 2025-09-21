@@ -3,8 +3,6 @@ package gorgeous.algorithm.leetcode;
 import java.util.Stack;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode98 {
 
     public boolean isValidBST1(TreeNode<Integer> root) {

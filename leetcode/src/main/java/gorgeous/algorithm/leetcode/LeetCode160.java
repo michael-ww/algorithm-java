@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode160 {
 
     public ListNode<Integer> getIntersectionNode(ListNode<Integer> headA, ListNode<Integer> headB) {

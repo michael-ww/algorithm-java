@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode110 {
 
     public boolean isBalanced(TreeNode<Integer> root) {

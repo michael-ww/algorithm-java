@@ -5,8 +5,6 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode912Test {
 
     @Test

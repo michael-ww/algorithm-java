@@ -1,4 +1,4 @@
-package gorgeous.algorithm.common;
+package gorgeous.algorithm.leetcode;
 
 import java.util.HashSet;
 import java.util.Random;

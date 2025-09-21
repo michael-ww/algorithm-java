@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode206 {
 
     public ListNode<Integer> reverseList(ListNode<Integer> head) {

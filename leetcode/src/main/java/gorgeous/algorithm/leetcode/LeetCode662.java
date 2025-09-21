@@ -3,8 +3,6 @@ package gorgeous.algorithm.leetcode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode662 {
 
     public int widthOfBinaryTree(TreeNode root) {

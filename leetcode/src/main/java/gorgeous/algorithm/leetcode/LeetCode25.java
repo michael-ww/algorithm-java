@@ -1,8 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.ListNode;
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode25 {
 
     public ListNode<Integer> reverseKGroup(ListNode<Integer> head, int k) {

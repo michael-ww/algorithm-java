@@ -2,8 +2,6 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.PriorityQueue;
 
-import gorgeous.algorithm.common.Utility;
-
 public class LeetCode2208 {
 
     public int halveArray1(int[] nums) {

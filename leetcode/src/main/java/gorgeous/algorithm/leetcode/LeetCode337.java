@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.TreeNode;
-
 public class LeetCode337 {
 
     public int rob(TreeNode<Integer> root) {

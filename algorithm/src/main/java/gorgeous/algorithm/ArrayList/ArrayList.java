@@ -1,4 +1,4 @@
-package gorgeous.algorithm.common;
+package gorgeous.algorithm.ArrayList;
 
 public class ArrayList<T extends Comparable<T>> {
 
@@ -80,6 +80,10 @@ public class ArrayList<T extends Comparable<T>> {
             }
         }
         return -1;
+    }
+
+    public boolean contains(T value) {
+        return this.indexOf(value) != -1;
     }
 
     public int getSize() {

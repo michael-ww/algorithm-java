@@ -1,7 +1,5 @@
 package gorgeous.algorithm.leetcode;
 
-import gorgeous.algorithm.common.ListNode;
-
 public class LeetCode21 {
 
     public ListNode<Integer> mergeTowListNode(ListNode<Integer> list1, ListNode<Integer> list2) {
