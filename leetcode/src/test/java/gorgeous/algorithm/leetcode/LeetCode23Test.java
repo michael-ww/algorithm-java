@@ -18,7 +18,6 @@ public class LeetCode23Test {
         ListNode<Integer> ln32 = new ListNode<>(6);
         ListNode<Integer> ln31 = new ListNode<>(2, ln32);
 
-        @SuppressWarnings("unchecked")
         ListNode<Integer>[] listNodes = new ListNode[]{ln11, ln21, ln31};
 
         // When

@@ -1,44 +1,40 @@
-package gorgeous.algorithm.LinkedList;
+package gorgeous.algorithm;
 
-public class Queue<T> {
+public class StackLinkedList<T extends Comparable<T>> {
 
-    private Node<T> front;
-    private Node<T> rear;
+    private final Node<T> top;
     private int size;
 
-    public Queue() {
-        this.front = null;
-        this.rear = null;
+    public StackLinkedList() {
+        this.top = new Node<>(null);
         this.size = 0;
     }
 
-    public void enqueue(T data) {
+    public void push(T data) {
         Node<T> node = new Node<>(data);
-        if (this.isEmpty()) {
-            this.front = node;
-            this.rear = node;
-        } else {
-            this.rear.setNext(node);
-            node.setPrevious(this.rear);
-            this.rear = node;
-        }
+        node.setNext(this.top.getNext());
+        node.setPrevious(this.top);
+        this.top.getNext().setPrevious(node);
+        this.top.setNext(node);
         this.size++;
     }
 
-    public T dequeue() {
+    public T pop() {
         if (this.isEmpty()) {
             return null;
-        } else {
-            T data = this.front.getData();
-            this.front = this.front.getNext();
-            if (this.front != null) {
-                this.front.setPrevious(null);
-            } else {
-                this.rear = null;
-            }
-            this.size--;
-            return data;
         }
+        Node<T> node = this.top.getNext();
+        node.getNext().setPrevious(this.top);
+        this.top.setNext(node.getNext());
+        this.size--;
+        return node.getData();
+    }
+
+    public T peek() {
+        if (this.isEmpty()) {
+            return null;
+        }
+        return this.top.getNext().getData();
     }
 
     public boolean isEmpty() {
@@ -58,7 +54,6 @@ public class Queue<T> {
         public Node(T data) {
             this.data = data;
             this.next = null;
-            this.previous = null;
         }
 
         public T getData() {

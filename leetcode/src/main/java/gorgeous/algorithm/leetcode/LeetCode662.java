@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class LeetCode662 {
 
-    public int widthOfBinaryTree(TreeNode root) {
+    public int widthOfBinaryTree(TreeNode<Integer> root) {
         int answer = 0;
         Queue<Entry> queue = new ArrayDeque<>();
         queue.offer(new Entry(root, 1));

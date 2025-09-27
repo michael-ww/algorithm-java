@@ -1,4 +1,4 @@
-package gorgeous.algorithm.ArrayList;
+package gorgeous.algorithm;
 
 public class ArrayList<T extends Comparable<T>> {
 

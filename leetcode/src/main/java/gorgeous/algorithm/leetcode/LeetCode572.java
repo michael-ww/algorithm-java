@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LeetCode572 {
 
-    public boolean isSubtree1(TreeNode root, TreeNode subRoot) {
+    public boolean isSubtree1(TreeNode<Integer> root, TreeNode<Integer> subRoot) {
         if (root != null && subRoot != null) {
 
             return isSameTree(root, subRoot) || isSubtree1(root.getLeft(), subRoot) || isSubtree1(root.getRight(), subRoot);
@@ -13,7 +13,7 @@ public class LeetCode572 {
         return subRoot == null;
     }
 
-    private boolean isSameTree(TreeNode root, TreeNode subRoot) {
+    private boolean isSameTree(TreeNode<Integer> root, TreeNode<Integer> subRoot) {
         if (root == null && subRoot == null) {
             return true;
         }
@@ -23,7 +23,7 @@ public class LeetCode572 {
         return false;
     }
 
-    public boolean isSubtree2(TreeNode root, TreeNode subRoot) {
+    public boolean isSubtree2(TreeNode<Integer> root, TreeNode<Integer> subRoot) {
         if (root != null && subRoot != null) {
             List<String> rs = new ArrayList<>();
             List<String> ss = new ArrayList<>();
@@ -35,7 +35,7 @@ public class LeetCode572 {
         return subRoot == null;
     }
 
-    private void serialize(TreeNode root, List<String> list) {
+    private void serialize(TreeNode<Integer> root, List<String> list) {
         if (root == null) {
             list.add("null");
         } else {

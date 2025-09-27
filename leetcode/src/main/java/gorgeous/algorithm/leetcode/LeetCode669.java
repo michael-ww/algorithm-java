@@ -2,7 +2,7 @@ package gorgeous.algorithm.leetcode;
 
 public class LeetCode669 {
 
-    public TreeNode trimBST(TreeNode<Integer> root, int low, int high) {
+    public TreeNode<Integer> trimBST(TreeNode<Integer> root, int low, int high) {
         if (root == null) {
             return null;
         }

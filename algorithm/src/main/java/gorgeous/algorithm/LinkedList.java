@@ -1,4 +1,4 @@
-package gorgeous.algorithm.LinkedList;
+package gorgeous.algorithm;
 
 public class LinkedList<T> {
 

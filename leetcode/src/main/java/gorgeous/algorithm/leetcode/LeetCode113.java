@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LeetCode113 {
 
-    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+    public List<List<Integer>> pathSum(TreeNode<Integer> root, int targetSum) {
         List<List<Integer>> answer = new ArrayList<>();
         this.pathSum(root, targetSum, answer, new LinkedList<>());
         return answer;
