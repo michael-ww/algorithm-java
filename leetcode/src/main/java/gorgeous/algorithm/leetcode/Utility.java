@@ -5,6 +5,15 @@ import java.util.Random;
 
 public class Utility {
 
+    public static void swap(char[] array, int i, int j) {
+        if (array == null || array.length <= 0 || i >= array.length || j >= array.length) {
+            return;
+        }
+        char temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+
     public static void swap(int[] array, int i, int j) {
         if (array == null || array.length <= 0 || i >= array.length || j >= array.length) {
             return;

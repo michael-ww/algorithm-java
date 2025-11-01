@@ -5,17 +5,13 @@ import java.util.HashSet;
 public class LeetCode141 {
 
     public boolean hasCycle1(ListNode<Integer> head) {
-        if (head == null || head.getNext() == null) {
-            return false;
-        }
-
-        HashSet<ListNode<Integer>> hashSet = new HashSet<>();
+        HashSet<ListNode<Integer>> set = new HashSet<>();
         ListNode<Integer> current = head;
         while (current != null) {
-            if (hashSet.contains(current)) {
+            if (set.contains(current)) {
                 return true;
             } else {
-                hashSet.add(current);
+                set.add(current);
             }
             current = current.getNext();
         }
@@ -24,14 +20,8 @@ public class LeetCode141 {
     }
 
     public boolean hasCycle2(ListNode<Integer> head) {
-        if (head == null || head.getNext() == null) {
-            return false;
-        }
         ListNode<Integer> fast = head, slow = head;
-        while (fast != null && slow != null) {
-            if (fast.getNext() == null || fast.getNext().getNext() == null) {
-                return false;
-            }
+        while (fast != null && fast.getNext() != null) {
             fast = fast.getNext().getNext();
             slow = slow.getNext();
             if (fast == slow) {

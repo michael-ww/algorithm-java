@@ -2,7 +2,7 @@ package gorgeous.algorithm.leetcode;
 
 public class LeetCode160 {
 
-    public ListNode<Integer> getIntersectionNode(ListNode<Integer> headA, ListNode<Integer> headB) {
+    public ListNode<Integer> getIntersectionNode1(ListNode<Integer> headA, ListNode<Integer> headB) {
         if (headA == null || headB == null) {
             return null;
         }
@@ -111,5 +111,23 @@ public class LeetCode160 {
             }
             return null;
         }
+    }
+
+    public ListNode<Integer> getIntersectionNode2(ListNode<Integer> headA, ListNode<Integer> headB) {
+        ListNode<Integer> currentA = headA, currentB = headB;
+        while (currentA != currentB) {
+            if (currentA == null) {
+                currentA = headB;
+            } else {
+                currentA = currentA.getNext();
+            }
+            if (currentB == null) {
+                currentB = headA;
+            } else {
+                currentB = currentB.getNext();
+            }
+        }
+
+        return currentA;
     }
 }

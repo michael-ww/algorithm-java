@@ -2,6 +2,7 @@ package gorgeous.algorithm.leetcode;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 public class LeetCode3 {
 
@@ -47,4 +48,26 @@ public class LeetCode3 {
 
         return answer;
     }
+
+    public String longestDistinctSubstring3(String source) {
+        if (source == null || source.isBlank() || source.isEmpty()) {
+            return "";
+        }
+
+        Set<Character> window = new HashSet<>();
+        String result = "";
+        for (int leftIndex = 0, rightIndex = 0; rightIndex < source.length(); rightIndex++) {
+            char adding = source.charAt(rightIndex);
+            while (window.contains(adding)) {
+                window.remove(source.charAt(leftIndex++));
+            }
+            window.add(adding);
+            if (rightIndex - leftIndex + 1 > result.length()) {
+                result = source.substring(leftIndex, rightIndex + 1);
+            }
+        }
+
+        return result;
+    }
+
 }

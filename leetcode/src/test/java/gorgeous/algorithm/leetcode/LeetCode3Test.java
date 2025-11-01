@@ -20,6 +20,10 @@ public class LeetCode3Test {
         String answer5 = leetCode3.longestDistinctSubstring2(s2);
         String answer6 = leetCode3.longestDistinctSubstring2(s3);
 
+        String answer7 = leetCode3.longestDistinctSubstring3(s1);
+        String answer8 = leetCode3.longestDistinctSubstring3(s2);
+        String answer9 = leetCode3.longestDistinctSubstring3(s3);
+
         // then
         Assertions.assertEquals("abc", answer1);
         Assertions.assertEquals("b", answer2);
@@ -28,6 +32,10 @@ public class LeetCode3Test {
         Assertions.assertEquals("abc", answer4);
         Assertions.assertEquals("b", answer5);
         Assertions.assertEquals("wke", answer6);
+
+        Assertions.assertEquals("abc", answer7);
+        Assertions.assertEquals("b", answer8);
+        Assertions.assertEquals("wke", answer9);
 
     }
 }

@@ -1,0 +1,260 @@
+{
+    "root": {
+        "data": {
+            "id": "dd3nkduln280",
+            "created": 1758983372499,
+            "text": "学习心法",
+            "priority": null,
+            "font-size": 18,
+            "font-family": "andale mono"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "dd7tg1mchsw0",
+                    "created": 1759406198908,
+                    "text": "数据结构（本质就是增删改查）",
+                    "font-size": 18,
+                    "font-family": "andale mono"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dd7tgcz1keo0",
+                            "created": 1759406223621,
+                            "text": "数组（顺序存储）",
+                            "font-size": 18,
+                            "font-family": "andale mono"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dd7tk6oznio0",
+                                    "created": 1759406523409,
+                                    "text": "动态数组",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dd7x55ao3740",
+                                            "created": 1759416629343,
+                                            "text": "左右指针(滑动窗口)和快慢指针"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "dd8ojhivuew0",
+                                                    "created": 1759493923027,
+                                                    "text": "// 滑动窗口算法框架伪码\nint left = 0, right = 0;\n\n\nwhile (right < nums.size()) {\n\t// 增大窗口\n\twindow.addLast(nums[right]);\n\tright++;\n\t\n\twhile (window needs shrink) {\n\t    // 缩小窗口\n\t    window.removeFirst(nums[left]);\n\t    left++;\n\t}\n}"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tka92ozk0",
+                                    "created": 1759406531154,
+                                    "text": "字符串",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tkbwx67s0",
+                                    "created": 1759406534772,
+                                    "text": "哈希表",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tkcva83c0",
+                                    "created": 1759406536850,
+                                    "text": "......",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dd7tgh4iyrk0",
+                            "created": 1759406232659,
+                            "text": "链表（链式存储）",
+                            "font-size": 18,
+                            "font-family": "andale mono"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dd7tku60x5c0",
+                                    "created": 1759406574505,
+                                    "text": "单/双链表",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "dd7x2op1jug0",
+                                            "created": 1759416436479,
+                                            "text": "快慢指针"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tkuwsjqg0",
+                                    "created": 1759406576123,
+                                    "text": "各种树",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tkv4sfuw0",
+                                    "created": 1759406576607,
+                                    "text": "......",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "dd7tjdl4gbk0",
+                    "created": 1759406460048,
+                    "text": "算法问题（本质就是穷举）",
+                    "font-size": 18,
+                    "font-family": "andale mono"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "dd7tmla8i740",
+                            "created": 1759406711897,
+                            "text": "如何穷举（无遗漏）",
+                            "font-size": 18,
+                            "font-family": "andale mono"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dd7tmz5f6o80",
+                                    "created": 1759406742081,
+                                    "text": "回溯算法",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tmzicoew0",
+                                    "created": 1759406742862,
+                                    "text": "动态规划",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tmzp8ago0",
+                                    "created": 1759406743278,
+                                    "text": "DFS/BFS",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tnd164kg0",
+                                    "created": 1759406772298,
+                                    "text": "......",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "dd7tmlmqtdc0",
+                            "created": 1759406712653,
+                            "text": "如何聪明地穷举（无冗余）",
+                            "font-size": 18,
+                            "font-family": "andale mono"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "dd7tnvsl3ew0",
+                                    "created": 1759406813138,
+                                    "text": "二分",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tnw53yi80",
+                                    "created": 1759406813896,
+                                    "text": "滑动窗口",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tnwc9vg00",
+                                    "created": 1759406814329,
+                                    "text": "贪心",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "dd7tnwm0ypk0",
+                                    "created": 1759406814918,
+                                    "text": "......",
+                                    "font-size": 18,
+                                    "font-family": "andale mono"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "snow",
+    "version": "1.4.43"
+}

@@ -1,26 +1,29 @@
 package gorgeous.algorithm.leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class LeetCode46 {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> answer = new ArrayList<>();
-        this.backtrack(nums, 0, answer);
+        this.backtrack(nums, new boolean[nums.length], new ArrayList<>(), answer);
         return answer;
     }
 
-    private void backtrack(int[] nums, int index, List<List<Integer>> answer) {
-        if (index >= nums.length) {
-            answer.add(Arrays.stream(nums).boxed().collect(Collectors.toList()));
+    private void backtrack(int[] nums, boolean[] used, List<Integer> path, List<List<Integer>> answer) {
+        if (path.size() == nums.length) {
+            answer.add(new ArrayList<>(path));
         } else {
-            for (int i = index; i < nums.length; i++) {
-                Utility.swap(nums, i, index);
-                this.backtrack(nums, index + 1, answer);
-                Utility.swap(nums, i, index);
+            for (int i = 0; i < nums.length; i++) {
+                if (used[i]) {
+                    continue;
+                }
+                path.add(nums[i]);
+                used[i] = true;
+                this.backtrack(nums, used, path, answer);
+                path.removeLast();
+                used[i] = false;
             }
         }
     }

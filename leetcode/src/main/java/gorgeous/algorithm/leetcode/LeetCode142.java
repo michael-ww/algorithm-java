@@ -7,16 +7,20 @@ public class LeetCode142 {
             return null;
         }
         ListNode<Integer> fast = head, slow = head;
-        while (!fast.equals(slow)) {
-            if (fast.getNext() == null || fast.getNext().getNext() == null) {
-                return null;
-            }
+        while (fast != null && fast.getNext() != null) {
             fast = fast.getNext().getNext();
             slow = slow.getNext();
+            if (fast == slow) {
+                break;
+            }
         }
 
-        fast = head;
-        while (!fast.equals(slow)) {
+        if (fast == null || fast.getNext() == null) {
+            return null;
+        }
+
+        slow = head;
+        while (fast != slow) {
             fast = fast.getNext();
             slow = slow.getNext();
         }

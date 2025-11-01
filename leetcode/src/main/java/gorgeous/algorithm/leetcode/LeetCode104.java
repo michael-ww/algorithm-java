@@ -3,6 +3,12 @@ package gorgeous.algorithm.leetcode;
 public class LeetCode104 {
 
     public int maxDepth(TreeNode<Integer> root) {
-        return root == null ? 0 : Math.max(this.maxDepth(root.getLeft()), this.maxDepth(root.getRight())) + 1;
+        if (root == null) {
+            return 0;
+        }
+
+        int leftDepth = maxDepth(root.getLeft());
+        int rightDepth = maxDepth(root.getRight());
+        return Math.max(leftDepth, rightDepth) + 1;
     }
 }

@@ -16,13 +16,13 @@ public class LeetCode23 {
             }
         }
 
-        ListNode<Integer> previous = new ListNode<>(0);
-        ListNode<Integer> current = previous;
+        ListNode<Integer> dummy = new ListNode<>(null);
+        ListNode<Integer> current = dummy;
         while (!pq.isEmpty()) {
             current.setNext(pq.poll());
             current = current.getNext();
         }
 
-        return previous.getNext();
+        return dummy.getNext();
     }
 }
